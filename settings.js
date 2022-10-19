@@ -120,7 +120,7 @@ module.exports.clients = [
 	client_secret: process.env.STUB_CLIENT_SECRET || 'secretsarehardtokeep',
 	grant_types: ['refresh_token', 'authorization_code'],
 	redirect_uris: [process.env.CALLBACK_URL || 'http://localhost:7000/callback', 'https://login.microsoftonline.com/te/navtestb2c.onmicrosoft.com/oauth2/authresp', 'https://login.microsoftonline.com/te/navqb2c.onmicrosoft.com/oauth2/authresp', 'https://navtestb2c.b2clogin.com/navtestb2c.onmicrosoft.com/oauth2/authresp'],
-	token_endpoint_auth_method: 'client_secret_post'
+	token_endpoint_auth_method: 'none'
 }];
 
 module.exports.certificates = [{
